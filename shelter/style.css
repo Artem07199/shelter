@@ -1,0 +1,145 @@
+.start-screen {
+    height: 908px;
+    /* width: 1280px; */
+    background: linear-gradient(to right, #5B483A, #211F20);
+    background-image: url('images/start-screen-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 908px;
+    ;
+}
+
+.header-logo-title {
+    margin: 0;
+}
+
+.start-screen-header {
+    padding-top: 30px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list-link {
+    color: #CDCDCD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration: none;
+}
+
+.nav-li {
+    list-style-type: none;
+    margin: 0 35px 0 0;
+
+}
+
+.start-screen-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-text{
+    max-width: 460px;
+    max-height: 322px;
+}
+.content-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+.content-subhead {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+}
+
+.content-btn {
+    background-color: #F1CDB3;
+    border-radius: 100px;
+    padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    font-weight: 400;
+    color: #292929;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.about{
+    height: 588px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+.about-content{
+    width: 430px;
+    height: 380px;
+}
+.about-content-heading{
+    font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #545454;
+}
+.about-content-subhead{
+    font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+color: #4C4C4C;
+}
+
+
+
+
+
+
+
+
+
+.pets{
+width: 1280px;
+height: 877px;
+background-color: #F6F6F6;
+}
+
+
+.help{
+    width: 1280px;
+height: 611px;
+background-color: #ffffff;
+}
+
+
+
+.donat{
+    width: 1280px;
+height: 462px;
+background-color: #F6F6F6;
+
+}
+@media screen(max-widht: 1280px) {
+    .start-screen {
+        width: 1280px;
+        max-width: 1280px;
+    }
+
+}
