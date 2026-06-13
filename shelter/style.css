@@ -10,11 +10,17 @@
     max-height: 908px;
     ;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo-link {
@@ -40,6 +46,7 @@ h3 {
 
     margin: 11px 0 0 4px;
 }
+
 .header-logo-title-our {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
@@ -68,6 +75,7 @@ h3 {
     justify-content: space-between;
 
 }
+
 .start-screen-header-our {
     padding-top: 30px;
     width: 1200px;
@@ -91,9 +99,11 @@ h3 {
     line-height: 160%;
     text-decoration: none;
 }
-.nav-list-link:hover{
+
+.nav-list-link:hover {
     color: #fafafa;
 }
+
 .nav-list-link-our {
     color: #545454;
     font-family: Arial, Helvetica, sans-serif;
@@ -102,21 +112,25 @@ h3 {
     line-height: 160%;
     text-decoration: none;
 }
-.nav-list-link-our:hover{
-color: #292929;
+
+.nav-list-link-our:hover {
+    color: #292929;
 }
-.checked{
+
+.checked {
     color: #292929;
     padding-bottom: 4px;
     border-bottom: #F1CDB3 solid 3px;
-    cursor: default; 
+    cursor: default;
 }
-.checked1{
+
+.checked1 {
     color: #fafafa;
     padding-bottom: 4px;
     border-bottom: #F1CDB3 solid 3px;
     cursor: default;
 }
+
 .nav-li {
     list-style-type: none;
 
@@ -156,7 +170,7 @@ color: #292929;
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    margin: 42px 0;
+    margin: 42px 0 56px;
 }
 
 .content-image {
@@ -167,9 +181,6 @@ color: #292929;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #F1CDB3;
     border-radius: 100px;
-    padding: 13px 42px;
-    width: 207px;
-    height: 52px;
     font-weight: 400;
     color: #292929;
     font-size: 17px;
@@ -177,6 +188,12 @@ color: #292929;
     letter-spacing: 0.06em;
     cursor: pointer;
     border: transparent;
+    padding: 16px 45px;
+    text-decoration: none;
+}
+
+.content-btn:hover {
+    background-color: #FDDCC4;
 }
 
 .about {
@@ -196,13 +213,15 @@ color: #292929;
 }
 
 .about-content-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 35px 0 0;
     max-width: 370px;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #545454;
-    margin-bottom: 24px;
+
 }
 
 .about-content-subhead {
@@ -257,19 +276,20 @@ color: #292929;
 .cards-wrapper {
     display: flex;
     gap: 90px;
-    margin-bottom: 90px;
+    margin-bottom: 59px;
 }
 
 .card {
-    background: #f7f7f7;
+    background: #fafafa;
     border-radius: 15px;
     text-align: center;
     width: 270px;
+    height: 435px;
+    transition: all 0.3s ease;
 }
 
 .card img {
     width: 100%;
-    border-radius: 10px;
 }
 
 .card p {
@@ -295,6 +315,7 @@ color: #292929;
     cursor: pointer;
     width: 187px;
     height: 52px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .slider-arrow {
@@ -306,20 +327,19 @@ color: #292929;
     background: none;
     cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
-letter-spacing: 0.06em;
-text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    text-align: center;
 
 }
 
 .pets-btn {
+    text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 0;
     border-radius: 100px;
-    width: 261px;
-    height: 52px;
     background-color: #F1CDB3;
     font-weight: 400;
     font-size: 17px;
@@ -327,9 +347,11 @@ text-align: center;
     letter-spacing: 0.06em;
     color: #292929;
     cursor: pointer;
+    padding: 15px 45px;
+
 }
 
-.pets-btn:hover{
+.pets-btn:hover {
     background-color: #FDDCC4;
 }
 
@@ -337,10 +359,13 @@ text-align: center;
     background: #FDDCC4;
 }
 
-.card-btn:hover {
+.card:hover .card-btn {
     background: #FDDCC4;
 }
 
+.card:hover {
+    cursor: pointer;
+}
 
 
 
@@ -387,34 +412,41 @@ text-align: center;
 
 
 .help-list {
+    max-width: 1026px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px 30px;
+    justify-content: space-between;
+    gap: 36px 90px;
     list-style: none;
-    padding: 0;
+    padding: 23px 0;
     margin: 0;
 }
 
 .help-list-item {
-    flex: 0 0 calc(20% - 24px);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+
 }
 
-.help-list-item:hover {
-    transform: translateY(-5px);
+.help-list-item:nth-child(6) {
+
+    padding-left: 84px;
+
 }
 
-.help-list-itemimg {
+.help-list-item:nth-child(9) {
+
+    padding-right: 82px;
+
+}
+
+.help-list-item img {
     width: 60px;
     height: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     object-fit: contain;
 }
 
@@ -427,15 +459,6 @@ text-align: center;
     text-align: center;
     color: #545454;
 }
-
-
-
-
-
-
-
-
-
 
 
 .donat {
@@ -497,16 +520,15 @@ text-align: center;
     padding-left: 30px;
 }
 
-.donat-link{
+.donat-link {
     text-decoration: none;
     cursor: pointer;
 }
 
 .donat-btn {
+    text-decoration: none;
     border: transparent;
     border-radius: 9px;
-    width: 349px;
-    height: 43px;
     background-color: #F1CDB3;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
@@ -517,8 +539,13 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    padding: 10px 15px;
 }
+
+.donat-btn img {
+    margin-right: 16px;
+}
+
 .donat-btn:hover {
     background-color: #FDDCC4;
     cursor: pointer;
@@ -582,12 +609,12 @@ text-align: center;
 }
 
 .email {
-    padding-top: 18px;
+    padding-top: 36px;
     margin-bottom: 40px;
 }
 
 .marker1 {
-    padding-top: 11px;
+    padding-top: 29px;
     margin-bottom: 34px;
 }
 
@@ -608,22 +635,23 @@ text-align: center;
 
 .cards-wrapper-our {
     display: flex;
-    gap: 60px 40px;
-    margin-bottom: 90px;
+    gap: 30px 40px;
+    margin-bottom: 58px;
     flex-wrap: wrap;
 }
 
-.pets-head-text-our{
+.pets-head-text-our {
     font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: 400;
-font-size: 35px;
-line-height: 130%;
-letter-spacing: 0.06em;
-text-align: center;
-color: #545454;
-margin-top: 79px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+    margin-top: 79px;
     margin-bottom: 60px;
 }
+
 .card-btn {
     font-weight: 400;
     font-size: 17px;
@@ -660,23 +688,25 @@ margin-top: 79px;
     letter-spacing: 0.06em;
     color: #292929;
     cursor: pointer;
-font-size: 20px;
-line-height: 115%;
-letter-spacing: 0.06em;
-text-align: center;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
 
 
-.pets-arr{
-        display: flex;
+.pets-arr {
+    display: flex;
     gap: 20px;
 }
-.number{
+
+.number {
     background: #F1CDB3;
     border: #F1CDB3;
 }
-.our-prev{
-        border: 2px solid #CDCDCD;
+
+.our-prev {
+    border: 2px solid #CDCDCD;
     color: #CDCDCD;
 }
 
