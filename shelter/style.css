@@ -30,6 +30,9 @@ a {
 .burger-menu {
     display: none;
 }
+.burger-menu-our {
+    display: none;
+}
 
 .slider-controls-mobile {
     display: none;
@@ -973,12 +976,20 @@ a {
         height: 20px;
         cursor: pointer;
     }
+    .burger-menu-our {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
 
-    .burger-menu span {
+    .burger-menu-our span {
         display: block;
         width: 100%;
         height: 2px;
-        background-color: #F1CDB3;
+        background-color: #000000;
     }
 
     .start-screen {
@@ -1080,11 +1091,17 @@ a {
     }
 
     .our-pets {
-        min-height: 1733px;
+        min-height: 1649px;
     }
 
     .pets-head-text-our {
         margin-bottom: 30px;
+        font-weight: 400;
+font-size: 25px;
+line-height: 130%;
+letter-spacing: 0.06em;
+text-align: center;
+margin: 41px 0;
     }
 
     .cards-wrapper-our {
@@ -1095,20 +1112,33 @@ a {
 
     .pets-arr {
         margin-top: 0.9rem;
+        gap: 10px;
     }
 
     .card-our {
         width: auto;
     }
 
-    .card-our:nth-child(7) {
+    /* .card-our:nth-child(3) {
+        display: none;
+    } */
+
+
+
+    .card-our:nth-child(4) {
+        display: none;
+    }
+    .card-our:nth-child(5) {
         display: none;
     }
 
-    .card-our:nth-child(3) {
-        display: block;
+    .card-our:nth-child(6) {
+        display: none;
     }
 
+    .card-our:nth-child(7) {
+        display: none;
+    }
     .card-our:nth-child(8) {
         display: none;
     }
@@ -1176,7 +1206,9 @@ a {
     .slider-arrow {
         margin-bottom: 30px;
     }
-
+    .card-our:nth-child(2) {
+        display: block;
+    }
     .slider {
         flex-direction: column;
         gap: 49px;
@@ -1282,10 +1314,6 @@ a {
         font-size: 15px;
         line-height: 110%;
         letter-spacing: 0.06em;
-    }
-
-    .donat-img {
-        /* margin-top: 1.3rem; */
     }
 
     .donat-img img {
