@@ -60,7 +60,7 @@ function renderCards(pets) {
     
     cardsWrapper.classList.remove('fade-out');
     isAnimating = false;
-  }, 300);
+  }, 400);
 }
 
 function handleNavigation() {

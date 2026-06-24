@@ -42,7 +42,7 @@ a {
     display: none;
 }
 .card {
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 1s ease;
 }
 
 @keyframes fadeIn {
@@ -359,7 +359,13 @@ a {
     text-align: center;
     transition: all 0.3s ease;
 
+}
 
+.slider-arrow:disabled {
+    color: #CDCDCD;       
+    border-color: #CDCDCD; 
+    cursor: not-allowed;  
+    pointer-events: none; 
 }
 
 .pets-btn {
@@ -379,9 +385,17 @@ a {
 
 }
 
+.slider-arrow.number:hover {
+ 
+    cursor: default;               
+    border-color: inherit;         
+    color: inherit;                
+    box-shadow: none;              
+}
 .pets-btn:hover {
     background-color: #FDDCC4;
 }
+
 
 .slider-arrow:hover {
     background: #FDDCC4;
@@ -731,12 +745,13 @@ a {
 .number {
     background: #F1CDB3;
     border: #F1CDB3;
+    pointer-events: none;
 }
 
-.our-prev {
+/* .our-prev {
     border: 2px solid #CDCDCD;
     color: #CDCDCD;
-}
+} */
 
 
 
